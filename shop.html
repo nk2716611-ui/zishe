@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Zishe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            background: none;
+            border: none;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 8px 16px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            color: var(--soft-gold);
+            border-bottom-color: var(--soft-gold);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="public/images/logo.png" alt="Zishe Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="cart.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" style="font-size: 0.8rem; background: var(--soft-gold); color: white; padding: 2px 6px; border-radius: 50%; vertical-align: top;">0</span>
+                </a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>Our Collection</h2>
+            <p>Explore our range of beautiful dresses and outfits</p>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Lawn Collection">Lawn Collection</button>
+            <button class="filter-btn" data-filter="Party Wear">Party Wear</button>
+            <button class="filter-btn" data-filter="Casual">Casual</button>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card" data-category="Lawn Collection">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?q=80&w=1920&auto=format&fit=crop" alt="Floral Summer Dress">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Lawn Collection</span>
+                    <h3 class="product-title">Floral Summer Dress</h3>
+                    <div class="product-price">$45.00</div>
+                    <a href="product.html" class="btn" style="margin-top: 1rem; font-size: 0.8rem; padding: 8px 15px;">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Party Wear">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1621452773781-0f992ee61918?q=80&w=2070&auto=format&fit=crop" alt="Pastel Party Frock">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Party Wear</span>
+                    <h3 class="product-title">Pastel Pink Frock</h3>
+                    <div class="product-price">$65.00</div>
+                    <a href="product.html" class="btn" style="margin-top: 1rem; font-size: 0.8rem; padding: 8px 15px;">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Casual">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=1887&auto=format&fit=crop" alt="Casual Chic Set">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Casual</span>
+                    <h3 class="product-title">Casual Chic Set</h3>
+                    <div class="product-price">$38.00</div>
+                    <a href="product.html" class="btn" style="margin-top: 1rem; font-size: 0.8rem; padding: 8px 15px;">View Details</a>
+                </div>
+            </div>
+            
+             <div class="product-card" data-category="Party Wear">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1526857946958-8684d0b25e71?q=80&w=1887&auto=format&fit=crop" alt="Golden Princess Gown">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Party Wear</span>
+                    <h3 class="product-title">Golden Princess Gown</h3>
+                    <div class="product-price">$85.00</div>
+                    <a href="product.html" class="btn" style="margin-top: 1rem; font-size: 0.8rem; padding: 8px 15px;">View Details</a>
+                </div>
+            </div>
+             
+              <div class="product-card" data-category="Casual">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?q=80&w=1935&auto=format&fit=crop" alt="Denim Overall Set">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Casual</span>
+                    <h3 class="product-title">Denim Overall Set</h3>
+                    <div class="product-price">$42.00</div>
+                    <a href="product.html" class="btn" style="margin-top: 1rem; font-size: 0.8rem; padding: 8px 15px;">View Details</a>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="Lawn Collection">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?q=80&w=1888&auto=format&fit=crop" alt="White Breeze Dress">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Lawn Collection</span>
+                    <h3 class="product-title">White Breeze Dress</h3>
+                    <div class="product-price">$48.00</div>
+                    <a href="product.html" class="btn" style="margin-top: 1rem; font-size: 0.8rem; padding: 8px 15px;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="public/images/logo.png" alt="Zishe Logo" style="height: 40px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+                <p>Modern, elegant, and feminine clothing for the little fashionista.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Zishe. All rights reserved.
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
