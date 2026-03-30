@@ -4,11 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Zishe</title>
+
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #555;
+        }
+
+        a {
+            color: #d63384;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #a42a68;
+        }
+
+        /* HEADER / NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .navbar a {
+            margin: 0 12px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .navbar a.active {
+            color: #d63384;
+            font-weight: 700;
+        }
+
+        .logo img {
+            height: 55px;
+        }
+
+        .nav-icons i {
+            font-size: 1.1rem;
+            margin-left: 15px;
+            color: #333;
+        }
+
+        /* SECTION STYLES */
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            color: #d63384;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Contact Grid */
+        .contact-info h3 {
+            color: #d63384;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-info p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .social-links a {
+            font-size: 1.2rem;
+            margin-right: 12px;
+            color: #d63384;
+        }
+        .social-links a:hover {
+            color: #a42a68;
+        }
+
+        /* Form Styles */
+        .contact-form label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .btn {
+            background-color: #d63384;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #a42a68;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #d63384;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .footer-column h3 {
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column ul li a {
+            color: #fff;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: #fff;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .nav-icons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -26,32 +237,34 @@
                 <a href="#"><i class="fas fa-search"></i></a>
                 <a href="cart.html">
                     <i class="fas fa-shopping-bag"></i>
-                    <span class="cart-count" style="font-size: 0.8rem; background: var(--soft-gold); color: white; padding: 2px 6px; border-radius: 50%; vertical-align: top;">0</span>
+                    <span class="cart-count">0</span>
                 </a>
                 <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </div>
         </nav>
     </header>
 
+    <!-- CONTACT SECTION -->
     <section class="section">
         <div class="section-header">
             <h2>Get in Touch</h2>
             <p>We'd love to hear from you. Send us a message below.</p>
         </div>
         
-        <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+        <div class="contact-grid">
+            <!-- CONTACT INFO -->
             <div class="contact-info">
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="margin-bottom: 0.5rem;">Visit Us</h3>
+                <div>
+                    <h3>Visit Us</h3>
                     <p>123 Fashion Avenue<br>New York, NY 10018</p>
                 </div>
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="margin-bottom: 0.5rem;">Contact Info</h3>
+                <div>
+                    <h3>Contact Info</h3>
                     <p>Email: hello@zishe.com<br>Phone: +1 (555) 123-4567</p>
                 </div>
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="margin-bottom: 0.5rem;">Follow Us</h3>
-                    <div class="social-links" style="margin-top: 0;">
+                <div>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-tiktok"></i></a>
@@ -59,28 +272,27 @@
                 </div>
             </div>
             
+            <!-- CONTACT FORM -->
             <form class="contact-form">
-                <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name</label>
-                    <input type="text" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
-                </div>
-                <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email</label>
-                    <input type="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
-                </div>
-                <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
-                    <textarea required rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;"></textarea>
-                </div>
-                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                <label>Name</label>
+                <input type="text" required>
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Message</label>
+                <textarea required rows="5"></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-content">
             <div class="footer-column">
-                <img src="public/images/logo.png" alt="Zishe Logo" style="height: 40px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+                <img src="public/images/logo.png" alt="Zishe Logo" style="height: 40px; margin-bottom: 1rem;">
                 <p>Modern, elegant, and feminine clothing for the little fashionista.</p>
             </div>
             <div class="footer-column">
@@ -96,6 +308,7 @@
             &copy; 2024 Zishe. All rights reserved.
         </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

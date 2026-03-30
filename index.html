@@ -1,66 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title (50–60 characters) -->
-    <title>Girls Fancy Dresses Pakistan | Party, Wedding & Eid</title>
+<title>Zishe | Elegant Girls Fancy Dresses in Pakistan</title>
+<meta name="description" content="Explore Zishe's exclusive collection of girls fancy dresses for parties, weddings, and Eid. Premium fabrics for comfort and style.">
 
-    <!-- SEO Meta Description (150–160 characters) -->
-    <meta name="description" content="Shop girls fancy dresses in Pakistan with latest party wear frocks, wedding dresses, Eid outfits & kids fancy dresses online at affordable prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="canonical" href="https://zishe2.pages.dev/">
 
-    <meta name="keywords" content="girls fancy dresses Pakistan, kids fancy dresses, girls party wear dresses, wedding dresses for girls, eid dresses for girls, fancy frocks Pakistan, girls dresses online Pakistan, latest girls dresses 2026">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yourdomain.com/">
+<style>
 
-    <!-- Fonts & CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-     "@context": "https://schema.org",
-     "@type": "Organization",
-     "name": "Zishe",
-     "url": "https://yourdomain.com",
-     "logo": "https://yourdomain.com/public/images/logo.png",
-     "sameAs": [
-       "https://instagram.com/",
-       "https://facebook.com/"
-     ]
-    }
-    </script>
+/* Header */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    margin: 0 12px;
+}
+
+.navbar a.active {
+    color: #d63384;
+}
+
+.logo img {
+    height: 55px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('public/images/hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f0e6f6;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #d63384;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #a42a68;
+}
+
+/* Section Headers */
+.section-header h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-header p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Feature Cards */
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 30px 20px;
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #d63384;
+    font-family: 'Playfair Display', serif;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Products Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product-card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    padding: 15px 10px;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    color: #d63384;
+}
+
+/* CTA */
+.cta {
+    text-align:center; 
+    padding:50px 20px;
+    background: #f8f0f8;
+}
+
+.cta h2 {
+    font-family: 'Playfair Display', serif;
+    color: #d63384;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #fff;
+    color: #555;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+}
+</style>
 </head>
-
 <body>
 
-<!-- Header -->
 <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="public/images/logo1.png" alt="Zishe girls fancy dresses Pakistan logo">
-            </a>
+            <a href="index.html"><img src="public/images/logo1.png" alt="Zishe girls fancy dresses Pakistan logo"></a>
         </div>
-        
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="shop.html">Shop</a>
             <a href="contact.html">Contact</a>
         </div>
-
         <div class="nav-icons">
             <a href="#"><i class="fas fa-search"></i></a>
-            <a href="cart.html">
-                <i class="fas fa-shopping-bag"></i>
-                <span class="cart-count">0</span>
-            </a>
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
             <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
@@ -69,11 +252,8 @@
 <!-- Hero -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Girls Fancy Dresses in Pakistan – Party Wear, Wedding & Eid Collection</h1>
-
-        <!-- Keyword-rich paragraph -->
-        <p>Shop girls fancy dresses in Pakistan with the latest 2026 designs including party wear frocks, wedding dresses for girls, Eid dresses, kids fancy dresses, lehenga choli, and stylish maxi dresses available online at best prices.</p>
-        
+        <h1>Elegant Girls Fancy Dresses in Pakistan</h1>
+        <p>Explore Zishe's exclusive collection of girls fancy dresses for parties, weddings, and Eid. From lehenga cholis to stylish maxi dresses, every outfit is crafted with premium fabrics for comfort and elegance.</p>
         <div class="hero-buttons">
             <a href="about.html" class="btn">About Zishe</a>
             <a href="shop.html" class="btn">Shop Now</a>
@@ -86,27 +266,25 @@
 <section class="section why-choose-us">
     <div class="section-header">
         <h2>Why Choose Zishe for Girls Fancy Dresses in Pakistan</h2>
+        <p>Explore Zishe's premium collection crafted with comfort and style in mind.</p>
     </div>
 
     <div class="features-grid">
         <div class="feature-card">
             <h3>Wide Collection</h3>
-            <p>Explore girls fancy dresses, party wear frocks, wedding dresses, and Eid outfits.</p>
+            <p>Explore Zishe's exclusive range of party wear frocks, wedding dresses, and Eid outfits for girls.</p>
         </div>
-
         <div class="feature-card">
             <h3>Premium Fabrics</h3>
-            <p>High-quality chiffon, organza, and embroidered fabrics for comfort and style.</p>
+            <p>High-quality chiffon, organza, and embroidered fabrics for comfort and elegance.</p>
         </div>
-
         <div class="feature-card">
             <h3>Perfect Fit</h3>
-            <p>Accurate size guide for kids fancy dresses and easy exchange options.</p>
+            <p>Accurate size guide for kids fancy dresses and hassle-free exchange options.</p>
         </div>
-
         <div class="feature-card">
             <h3>Fast Delivery</h3>
-            <p>Nationwide delivery across Pakistan with secure checkout.</p>
+            <p>Nationwide delivery across Pakistan with secure checkout and timely arrival.</p>
         </div>
     </div>
 </section>
@@ -115,39 +293,32 @@
 <section class="section">
     <div class="section-header">
         <h2>Latest Girls Fancy Dresses Collection</h2>
-        <p>Shop wedding dresses, party wear frocks, and Eid dresses for girls in Pakistan</p>
+        <p>Discover wedding dresses, party wear frocks, and Eid dresses for girls curated with premium fabrics and modern designs.</p>
     </div>
 
     <div class="product-grid">
-
         <div class="product-card">
             <img src="public/images/image.webp" alt="girls fancy wedding dress Pakistan 2026">
             <h3>Wedding Dress for Girls</h3>
         </div>
-
         <div class="product-card">
             <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?q=80&w=1920" alt="girls party wear frock Pakistan latest design">
             <h3>Party Wear Frock</h3>
         </div>
-
         <div class="product-card">
             <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=1887" alt="eid dresses for girls Pakistan collection">
             <h3>Eid Dresses for Girls</h3>
         </div>
-
     </div>
 </section>
 
 <!-- CTA -->
-<section class="section cta">
-    <div class="cta-content">
-        <h2>Buy Girls Fancy Dresses Online in Pakistan</h2>
-        <p>Order now and get the best kids fancy dresses for weddings, parties, and Eid.</p>
-        <a href="shop.html" class="btn">Shop Now</a>
-    </div>
+<section class="cta">
+    <h2>Buy Girls Fancy Dresses Online in Pakistan</h2>
+    <p>Order now and get the best kids fancy dresses for weddings, parties, and Eid delivered to your doorstep.</p>
+    <a href="shop.html" class="btn">Shop Now</a>
 </section>
 
-<!-- Footer -->
 <footer>
     <p>© 2026 Zishe | Girls Fancy Dresses in Pakistan</p>
 </footer>
